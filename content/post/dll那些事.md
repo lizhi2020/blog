@@ -30,3 +30,6 @@ dll hell
 [参考](https://blog.csdn.net/zp373860147/article/details/6827216)，这篇文章对原因的分析有问题
 [类库开发详解](https://blog.csdn.net/z702143700/article/details/45989993)
 [dll导出类库原则](https://www.cnblogs.com/huzongzhe/p/6735188.html)
+
+# 问题
+dll 导出类 为什么会有问题

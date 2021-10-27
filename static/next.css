@@ -1,0 +1,108 @@
+:root{
+--body-bg-color: #eee;
+--content-bg-color: #fff;
+--theme-color: #222;
+--brand-color: #fff;
+
+}
+body{
+    background-color: var(--body-bg-color);
+    font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+body > main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: calc(100% - 20px);
+}
+@media (min-width:1200px) {
+    body > main {
+        width: 1160px;
+    }
+}
+a {
+    border-bottom: 1px solid #999;
+    color: var(--link-color);
+    cursor: pointer;
+    outline: 0;
+    text-decoration: none;
+    overflow-wrap: break-word;
+}
+.sidebar {
+    width: 240px;
+}
+@media (max-width: 991px) {
+    .sidebar{
+        display: none;
+    }
+}
+
+.header-inner {
+    background: var(--content-bg-color);
+    border-radius: initial;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+    width: 240px;
+}
+
+.header-inner h1{
+    display: inline-block;
+}
+
+.site-brand-container {
+    background: var(--theme-color);
+}
+
+.site-meta{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.site-meta a{
+    color: var(--brand-color);
+}
+.site-meta p {
+    color: #ddd;
+    font-size: 0.8125em;
+    margin: 10px 0;
+}
+
+.main-inner {
+    width: calc(100% - 254px);
+    background-color: var(--body-bg-color);
+}
+
+.post-block{
+    padding: 40px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+    background-color: var(--content-bg-color);
+}
+.main-inner > .post-block:not(:first-child):not(.sub-menu){
+    margin-top: 10px;
+}
+.menu {
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
+.menu .menu-item {
+    display: block;
+    margin: 0;
+}
+.menu-item{
+    list-style: none;
+}
+.menu-item a {
+    border-bottom: 0;
+    display: block;
+    font-size: 0.8125em;
+}
+.menu .menu-item a {
+    padding: 5px 20px;
+    position: relative;
+    text-align: left;
+    transition-property: background-color;
+}
+.menu-item .fa, .menu-item .fab, .menu-item .far, .menu-item .fas {
+    margin-right: 8px;
+}

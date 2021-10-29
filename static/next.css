@@ -106,3 +106,40 @@ a {
 .menu-item .fa, .menu-item .fab, .menu-item .far, .menu-item .fas {
     margin-right: 8px;
 }
+code{
+    background: #2d2d2d;
+    color: #cccccc;
+    font-size: .875rem;
+    line-height: 1.45;
+    font-family: Consolas,Menlo,Monaco,"lucida console","Liberation Mono","Courier New","andale mono",monospaceX,monospace,sans-serif;
+}
+ul{
+    list-style: none;
+    counter-reset: line;
+}
+code li{
+    background: #2d2d2d;
+    color: #cccccc; 
+}
+
+code ul{
+    display: table;
+    padding: 0;
+}
+code ul li:before {
+    counter-increment: line;
+    content: counter(line);
+    display: table-cell;
+    text-align: right;
+    padding: 0 1rem;
+    color: #888;
+}
+ul li:first-child>.code-line{
+    padding-top: 1rem;
+}
+ul li:last-child>.code-line{
+    padding-bottom: 1rem;
+}
+.code-line{
+    display:table-cell;
+}

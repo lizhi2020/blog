@@ -110,6 +110,7 @@ code{
     background: #2d2d2d;
     color: #cccccc;
     font-size: .875rem;
+    display:block;
     line-height: 1.45;
     font-family: Consolas,Menlo,Monaco,"lucida console","Liberation Mono","Courier New","andale mono",monospaceX,monospace,sans-serif;
 }
@@ -119,7 +120,8 @@ ul{
 }
 code li{
     background: #2d2d2d;
-    color: #cccccc; 
+    color: #cccccc;
+    display: table-row;
 }
 
 code ul{
@@ -133,6 +135,7 @@ code ul li:before {
     text-align: right;
     padding: 0 1rem;
     color: #888;
+    background-color: #403E3E;
 }
 ul li:first-child>.code-line{
     padding-top: 1rem;
@@ -142,4 +145,5 @@ ul li:last-child>.code-line{
 }
 .code-line{
     display:table-cell;
+    padding: 0 1rem;
 }

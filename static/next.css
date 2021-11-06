@@ -147,3 +147,9 @@ ul li:last-child>.code-line{
     display:table-cell;
     padding: 0 1rem;
 }
+footer{
+    color: #999;
+    font-size: .875em;
+    padding: 20px 0;
+    text-align: center;
+}

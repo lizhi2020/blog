@@ -153,3 +153,8 @@ footer{
     padding: 20px 0;
     text-align: center;
 }
+span.with-love {
+    color: grey;
+    display: inline-block;
+    margin: 0 5px;
+}

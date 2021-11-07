@@ -4,6 +4,12 @@
 --theme-color: #222;
 --brand-color: #fff;
 
+    --btn-default-bg: #222;
+    --btn-default-color: #fff;
+    --btn-default-border-color: #222;
+    --btn-default-hover-bg: #fff;
+    --btn-default-hover-color: #222;
+    --btn-default-hover-border-color: #222;
 }
 body{
     background-color: var(--body-bg-color);
@@ -157,4 +163,50 @@ span.with-love {
     color: grey;
     display: inline-block;
     margin: 0 5px;
+}
+.post-sticky-flag {
+    display: inline-block;
+    margin-right: 8px;
+    transform: rotate(30deg);
+}
+.post-header {
+    font-size: 1.125em;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.post-meta-container {
+    color: #999;
+    font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    font-size: 0.75em;
+    margin-top: 3px;
+}
+.post-title {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: initial;
+    overflow-wrap: break-word;
+}
+.post-button {
+    margin-top: 40px;
+    text-align: center;
+}
+.btn {
+    background: var(--btn-default-bg);
+    border: 2px solid var(--btn-default-border-color);
+    border-radius: 0;
+    color: var(--btn-default-color);
+    display: inline-block;
+    font-size: 0.875em;
+    line-height: 2;
+    padding: 0 20px;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+.btn:hover {
+  background: var(--btn-default-hover-bg);
+  border-color: var(--btn-default-hover-border-color);
+  color: var(--btn-default-hover-color);
 }

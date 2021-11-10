@@ -1,12 +1,38 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="stylesheet" type="text/css" href="/next.css">
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     </head>
     <body>
         <div class="content">
-            {{#post}}
-            <div class="day">{{content}}</div>
-            {{/post}}
-        </div></body>
+            <div class="main">{{#post}}
+                <div class="post-block"><article>
+                    <header class="post-header animated fadeInDown">
+                    <h2 class="post-title" itemprop="name headline">
+                     <span class="post-sticky-flag" title="Sticky">
+                      <i class="fa fa-thumbtack"></i>
+                     </span>
+                     <a href="{{url}}" title="">{{title}}<i class="fa fa-external-link-alt"></i></a>
+                    </h2>
+                    </header>
+                    <div class="post-block-body" itemprop="articleBody">
+                        {{content}}       
+                    </div>
+                    <footer></footer>
+                </article></div>{{/post}}
+            </div>
+        </div>
+        <footer>
+            <div class="copyright"> © 2014 – 2021<span class="with-love"><i class="fa fa-user"></i></span> <span class="author" itemprop="copyrightHolder">少年东方曜</span></div>
+            <div class="footer-beian"> <a href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备20002547号</a> </div>
+            <div class="busuanzi-footer">
+              <span id="busuanzi_container_site_pv" style="display: inline;"> 本站总访问量 <span id="busuanzi_value_site_pv"></span> 次 </span>
+              <span class="division">|</span>
+              <span id="busuanzi_container_site_uv" style="display: inline;"> 本站总访客数 <span id="busuanzi_value_site_uv"></span> 人 </span>
+              <span class="division">|</span>
+              <span id="busuanzi_container_site_pv" style="display: inline;"> 本文总阅读量 <span id="busuanzi_value_page_pv">1</span> 次 </span>
+          </div>
+        </footer>
+    </body>
 </html>

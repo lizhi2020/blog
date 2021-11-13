@@ -226,4 +226,26 @@ span.with-love {
     position: absolute;
     left: 0;
     right: 0;
+    filter: opacity(0.75);
+}
+.homepage-fg .btn-set{
+    display: flex;
+    justify-content: center;
+}
+.homepage-fg a{
+    display: inline-flex;
+    flex-grow: 1;
+    height: 3em;
+    line-height: 3;
+    background-color: floralwhite;
+    justify-content: center;
+    margin: 0 20px;
+    filter: opacity(0.5);
+    border-radius: 5px;
+    font-size: 2rem;
+    box-shadow: 0px 0px 7px 0px;
+    max-width: 7em;
+}
+.homepage-fg a:hover{
+    transform: scale(1.2);
 }

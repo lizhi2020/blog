@@ -20,7 +20,7 @@ body{
 
 body > main {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0 auto;
     width: calc(100% - 20px);
 }
@@ -232,6 +232,9 @@ span.with-love {
     display: flex;
     justify-content: center;
 }
+.homepage-bg h1{
+    font-weight: normal;
+}
 .homepage-fg a{
     display: inline-flex;
     flex-grow: 1;
@@ -248,4 +251,7 @@ span.with-love {
 }
 .homepage-fg a:hover{
     transform: scale(1.2);
+}
+body::-webkit-scrollbar{
+    width: 0;
 }

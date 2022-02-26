@@ -36,7 +36,7 @@ jobs:
         run: |
           wget https://github.com/lizhi2020/rublog/releases/download/v0.1/rublog
           chmod +x rublog
-          ./rublog --theme nextr --template post.html
+          ./rublog --index dairy.html --theme nextr --template post.html
           ls public
           
       - name: Upload COS

@@ -28,7 +28,7 @@ jobs:
       - name: Checkout themes
         uses: actions/checkout@v2
         with:
-          repository: https://github.com/lizhi2020/nextr
+          repository: lizhi2020/nextr
           path: themes/nextr
 
       # Runs a single command using the runners shell

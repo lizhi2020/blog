@@ -37,11 +37,12 @@ jobs:
           wget https://github.com/lizhi2020/rublog/releases/download/v0.1/rublog
           chmod +x rublog
           ./rublog --theme nextr --template post.html
+          ls public
           
       - name: Upload COS
         uses: zkqiang/tencent-cos-action@v0.1.0
         with:
-          args: delete -r -f / && upload -r ./public/ /
+          args: upload -r ./public/ /
           secret_id: ${{ secrets.SECRET_ID }}
           secret_key: ${{ secrets.SECRET_KEY }}
           bucket: ${{ secrets.BUCKET }}

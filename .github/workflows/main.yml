@@ -34,7 +34,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: render
         run: |
-          wget https://github.com/lizhi2020/rublog/releases/download/v0.1/rublog
+          wget https://github.com/lizhi2020/rublog/releases/download/v0.2/rublog
           chmod +x rublog
           ./rublog --theme nextr --template post.html
           ls public
